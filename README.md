@@ -13,7 +13,7 @@ Environ 3 heures.
 
 ## Instructions pour ouvrir le projet
 
-1. Télécharger ou cloner le projet sur votre ordinateur.
+1. Télécharger ou cloner (lien : `git@github.com:Chret237/osc-employee-directory.git`) le projet sur votre ordinateur.
 2. Ouvrir le dossier du projet.
 3. Double-cliquer sur le fichier `index.html` pour lancer l’application dans votre navigateur.
 
