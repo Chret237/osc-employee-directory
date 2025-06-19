@@ -87,6 +87,13 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+section hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
 section ul {
     display: flex;
     flex-direction: column;
