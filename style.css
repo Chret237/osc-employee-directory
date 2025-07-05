@@ -19,7 +19,7 @@ header {
     max-width: 800px;
     padding: 20px;
     text-align: center;
-    background-color: orange;
+    background-color: #ff7900;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -67,14 +67,14 @@ button[type="submit"] {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgba(255, 166, 0, 0.74);
+    background-color: #ff7700c7;
     color: white;
     font-size: 1em;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: orange;
+    background-color: #ff7900;
 }
 
 section {
@@ -99,6 +99,8 @@ section ul {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
 }
 
 section li {
@@ -119,7 +121,7 @@ section li div span:last-child {
 }
 
 .delete-btn {
-    background-color: rgba(255, 0, 0, 0.651);
+    background-color: rgba(255, 0, 0, 0.6);
     color: white;
     width: 20%;
     height: 30px;

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const main = document.querySelector(".main-content");
     const layoutTemplate = document.getElementById("employeeList-layout");
     const itemTemplate = document.getElementById("employeeList-item-layout");
+    // const countSpan = document.getElementById("employee-count");
 
     main.innerHTML = "";
     main.appendChild(layoutTemplate.content.cloneNode(true));
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fonction pour afficher la liste des employés
     function renderEmployees(employees) {
         ul.innerHTML = "";
-        
+
         employees.forEach((emp, idx) => {
         const item = itemTemplate.content.cloneNode(true);
 
@@ -38,12 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 saveEmployees(employees);
                 renderEmployees(employees);
             });
+            
             ul.appendChild(item);
         });
     }
 
     // Initialisation
     let employees = loadEmployees();
+    console.log(employees);
     renderEmployees(employees);
 
     // Ajout d'un employé
@@ -60,4 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderEmployees(employees);
         form.reset();
     });
+
+    // Mise à jour du compteur
+    if (countSpan) countSpan.textContent = employees.length;
 });
